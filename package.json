@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preprush": "npm run lint",
+    "thiago": "echo 'Ola'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint src/*.js"
   },
   "author": "Thiago Marques <thiagomartins.marques@gmail.com> (http://thiagoam.com.br/)",
   "license": "MIT",
@@ -20,5 +23,12 @@
     "url": "https://github.com/marquesthiago/js-tdd-course/issues"
   },
   "homepage": "https://github.com/marquesthiago/js-tdd-course#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "husky": "^0.14.3"
+  },
+  "dependencies": {}
 }
